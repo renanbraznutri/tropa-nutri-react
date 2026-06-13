@@ -4,6 +4,7 @@ import Navigation from './components/Navigation'
 import Dashboard from './pages/Dashboard'
 import Pacientes from './pages/Pacientes'
 import Repasses from './pages/Repasses'
+import Login from './pages/Login'
 import './styles/app.css'
 
 export default function App() {
@@ -35,7 +36,7 @@ export default function App() {
   }
 
   if (!currentUser) {
-    return <div className="login-page">Por favor, faça login no Supabase</div>
+    return <Login />
   }
 
   const renderPage = () => {
